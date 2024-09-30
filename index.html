@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .a1 {
+            height: 100vh;
+            width: 100%;
+
+            min-height: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.573), rgba(0, 0, 0, 0.573)), url(pictures/interior-2685521_1280.jpg);
+            background-size: cover;
+        }
+
+        .a2 {
+            background-color: darkgray;
+            color: black;
+            padding: 2%;
+            align-items: center;
+            font-weight: 700;
+            border-radius: 10px;
+        }
+
+        .navbar-brand {
+            color: darkgrey;
+        }
+
+        .a3 {
+            background-color: rgb(37, 37, 37);
+            padding: 0%;
+        }
+
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">fur<span style="color: rgba(170, 147, 114, 0.486);">niture</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                login
+                            </button>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="a1 d-flex justify-content-center">
+            <div>
+                <center>
+                    <h1 style="color: rgb(247, 241, 234);">furniture website .start buying</h1>
+                    <br>
+                    <h4 style="color: rgb(247, 241, 234);">
+                        High quality, recommended, Three years warranty
+                    </h4><br>
+                    <button class="a2">shop furniture</button>
+                </center>
+            </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Sign in</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModals">already have an acount</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="cc62e2b6-30dc-411a-8d93-4204586b1d92">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input name="pass" type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="a3">
+
+            <div class="container">
+                <div class="d-flex justify-content-between mt-5 mb-3">
+                    <h2 style="color: rgba(245, 245, 245, 0.486);">PRODUCT</h2>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">categories</button>
+                </div>
+                <div class="row gy-5 mt-5 justify-content-evenly">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="/pictures/bedroom-6577523_1280.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class=" d-flex justify-content-evenly">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">$40</h5>
+                                </div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="/pictures/bedroom-5772286_1280.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class=" d-flex justify-content-between">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">$40</h5>
+                                </div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="/pictures/hey.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class=" d-flex justify-content-between">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">$40</h5>
+                                </div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="/pictures/living-room-1853203_1280.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class=" d-flex justify-content-between">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">$40</h5>
+                                </div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="card">
+                            <img src="/pictures/room-1336497_1280.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class=" d-flex justify-content-between">
+                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">$40</h5>
+                                </div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- offcanvas -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                ...
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>BLOGS</h1>
+        <div class="d-flex justify-content-center">
+            <h3>latest</h3>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h4><span style="color: brown;">RUQAIYA</span></h4>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/pictures/hut-6750482_1280.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa laborum consequatur optio
+                        repellendus sit sint dolorum quae fugiat. Quia voluptas quis beatae quasi voluptatem tempore at
+                        recusandae, quibusdam obcaecati?</p>
+                </div>
+                <div class="col">
+                    <h4><span style="color: brown;">RUQAIYA</span></h4>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/pictures/istockphoto-1283852667-1024x1024.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa laborum consequatur optio
+                        repellendus sit sint dolorum quae fugiat. Quia voluptas quis beatae quasi voluptatem tempore at
+                        recusandae, quibusdam obcaecati?</p>
+                </div>
+                <div class="col">
+                    <h4><span style="color: brown;">RUQAIYA</span></h4>
+                    <div class="card" style="width: 18rem;">
+                        <img src="/pictures/bridge-8800485_1280.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsa laborum consequatur optio
+                        repellendus sit sint dolorum quae fugiat. Quia voluptas quis beatae quasi voluptatem tempore at
+                        recusandae, quibusdam obcaecati?</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

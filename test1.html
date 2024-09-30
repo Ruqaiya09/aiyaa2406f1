@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form id="my form">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <span id="namefeedback"></span>
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <span id="emailfeedback"></span>
+        <br><br>
+        <button>submit</button>
+        </form>
+        <script>
+            const form=
+            document.getElementById('myform');
+            const nameinput=
+            document.getElementById('name');
+            const emailinput= 
+            document.getElementById('email');
+            const namefeedback=
+            document.getElementById('namefeedback');
+            const emailfeedback= 
+            document.getElementById('emailfeedback');
+        </script> -->
+
+    <h1>my form</h1>
+    <form id="form">
+        <label for="">my input</label>
+        <input type="text" name="" id="input">
+        <br>
+        <br>
+        <button type="button">submit</button>
+    </form>
+
+    <p id="feedback"> 
+        current value appear here
+        
+    </p>
+    <script>
+        const input = document.getElementById("myInput");
+        const button = document.getElementById("myButton");
+        const feedback = document.getElementById("feedback");
+
+        input.addEventListener("change", function () {
+            feedback.textContent = "Current input value" + input.value;
+        })
+        button.addEventListener("click", function () {
+            alert(input.value);
+        }); 
+    </script>
+</body>
+</html>

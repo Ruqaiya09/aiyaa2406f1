@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="my form">
+        <label for="">name</label>
+        <input type="text" id="name"><br><br>
+        <label for="">contact</label>
+        <input type="text" id="contact"><br><br>
+        <label for="">email</label>
+        <input type="text" id="email"><br><br>
+        <label for="">password</label>
+        <input type="text" id="pass"><br><br>
+        <label for="">confirm password</label>
+        <input type="text" id="cpass"><br><br>
+        <button type="submit">click me</button>
+    </form>
+    <script>
+        document.getElementById("my form").addEventListener("submit",function(event){
+            var nameRegex = /^[A-Za-z\s]+$/;
+            var phoneRegex = /^\d+$/;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[AZa-z\d!@#$%^&*]+$/;
+
+            var name=document.getElementById("name").value;
+            var contact=document.getElementById("contact").value;
+            var email=document.getElementById("email").value;
+            var pass=document.getElementById("pass").value;
+            var cpass=document.getElementById("cpass").value;
+
+            if(!nameRegex.test(name)){
+                alert("only alphabets are allowed");
+                event.preventDefault();
+                return;
+            }
+            if(!phoneRegex.test(contact)){
+                alert("only numerics are allowed");
+                event.preventDefault();
+                return;
+            }
+            if(!emailRegex.test(email)){
+                alert("invalid");
+                event.preventDefault();
+                return;
+            }
+            if(!passwordRegex.test(pass)){
+                alert("passwords contain one special character,one numeric values,one large alphabet");
+                event.preventDefault();
+                return;
+            }
+
+        })
+    </script>
+</body>
+</html>
